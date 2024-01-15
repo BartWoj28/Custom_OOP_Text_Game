@@ -1,8 +1,8 @@
 ﻿  Fantasy_Gra_Tekstowa.cpp
-C:\Users\48691\source\repos\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa.cpp(76,12): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
-C:\Users\48691\source\repos\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa.cpp(125,12): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
-C:\Users\48691\source\repos\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa.cpp(129,18): warning C4018: ">=": niezgodność typu ze znakiem/bez znaku
-C:\Users\48691\source\repos\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa.cpp(135,12): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
-C:\Users\48691\source\repos\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa.cpp(383,13): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
-C:\Users\48691\source\repos\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa.cpp(426,13): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+C:\Users\48691\source\repos\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa.cpp(77,12): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+C:\Users\48691\source\repos\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa.cpp(126,12): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+C:\Users\48691\source\repos\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa.cpp(130,18): warning C4018: ">=": niezgodność typu ze znakiem/bez znaku
+C:\Users\48691\source\repos\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa.cpp(136,12): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+C:\Users\48691\source\repos\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa.cpp(385,13): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+C:\Users\48691\source\repos\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa\Fantasy_Gra_Tekstowa.cpp(429,13): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
   Fantasy_Gra_Tekstowa.vcxproj -> C:\Users\48691\source\repos\Fantasy_Gra_Tekstowa\x64\Debug\Fantasy_Gra_Tekstowa.exe

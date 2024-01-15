@@ -40,6 +40,7 @@ Player CharacterCreator(Player character) {
 	character.name = name;
 	int choice;
 	bool mistake;
+	cout << "Welcome " << character.name << "." << endl;
 	cout << "Tell me something about yourself:" << endl;
 	do {
         mistake=false;
@@ -101,7 +102,7 @@ Enemy Encounter(int act)
 
 		}
 		else if (random == 1) { MetEnemy = { "Bandit",120,66,44,60,4,"medium"}; }
-		else MetEnemy = { "Renegate Knight",165,77,60,60,4,"hard"};
+		else MetEnemy = { "Renegate Knight",140,77,60,60,4,"hard"};
 		break;
 
 	case 3:
@@ -112,7 +113,7 @@ Enemy Encounter(int act)
 			MetEnemy = { "Fire Elemental",110,80,50,66,4,"medium"};
 
 		}
-		else { MetEnemy = { "Magma Golem",190,90,75,60,5,"hard"}; }
+		else { MetEnemy = { "Magma Golem",160,90,75,60,5,"hard"}; }
 		break;
 
 	}
@@ -310,10 +311,10 @@ Player Battle(Player player, Enemy enemy, int act) {
 	}
 
 	if (player.experience >= player.nextlevel) { 
-		player.nextlevel += 50 * player.level; 
+		player.nextlevel += 75; 
 		player.level++;
 		cout << "-------------------------------------------------" << endl;
-		cout << "You Reached a new level! Choose stat to upgrade(+10 to chosen statistic):" << endl;
+		cout << "You Reached a new level! Choose stat to upgrade(+20 to chosen statistic):" << endl;
 		cout << "1.Attack 2.Defene 3.Speed" << endl;
 		int upgrade = 0;
 		do
@@ -325,16 +326,16 @@ Player Battle(Player player, Enemy enemy, int act) {
 		switch (upgrade) {
 
             case 1:
-				player.attack += 10;
+				player.attack += 20;
 				break;
 
 			case 2:
-				player.defence += 10;
+				player.defence += 20;
 				break;
 
 
 			case 3:
-				player.speed += 10;
+				player.speed += 20;
 				break;
 
 
@@ -361,10 +362,11 @@ void Game() {
 	Enemy metenemy;
 	
 
-	for (int i = 0; i < 4; i++) {
+	for (int i = 0; i < 3; i++) {
+		cout << "Current Health: " << maincharachter.health << "." << endl;
         metenemy = Encounter(act);
 		maincharachter = Battle(maincharachter, metenemy, act);
-		if (maincharachter.health <= 0) return;
+		if (maincharachter.health <= 0) { cout<<"You lost. Game over."<<endl; return; }
 
 	}
 	int artifacts;
@@ -389,7 +391,7 @@ void Game() {
 		}
 
 		else {
-			cout << "Your lost come of your luck" << endl;
+			cout << "Your lost some of your luck" << endl;
 			maincharachter.luck -= 2;
 			if (maincharachter.luck < 1)maincharachter.luck = 1;
 		}
@@ -404,9 +406,10 @@ void Game() {
 	
 
 	for (int i = 0; i < 4; i++) {
+		cout << "Current Health: " << maincharachter.health << "." << endl;
 		metenemy = Encounter(act);
 		maincharachter = Battle(maincharachter, metenemy, act);
-		if (maincharachter.health <= 0) { cout << "You lost. Game over"; return; }
+		if (maincharachter.health <= 0) { cout << "You lost. Game over" << endl;; return; }
 
 	}
 
@@ -443,12 +446,13 @@ void Game() {
 	cout << "------------------------------------------------" << endl;
 	cout << "ACT III - The Volcanic Mountain" << endl;
 	cout << "You are geting closer, and closer to the volcano. It started getting hotter and hotter. This awfull monster's presence must have activated the volcano" << endl;
-	cout << "After a while you reached the volcano. You can smell sulfur and smoke in the air";
+	cout << "After a while you reached the volcano. You can smell sulfur and smoke in the air" << endl;;
 	for (int i = 0; i < 4; i++) {
+		cout << "Current Health: " << maincharachter.health << "." << endl;
 		metenemy = Encounter(act);
 		maincharachter = Battle(maincharachter, metenemy, act);
 
-		if (maincharachter.health <= 0) { cout << "You lost. Game over"; return; }
+		if (maincharachter.health <= 0) { cout << "You lost. Game over"<<endl; return; }
 	}
 
 
